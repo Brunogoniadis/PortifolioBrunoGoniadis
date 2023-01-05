@@ -4,7 +4,7 @@ export default createGlobalStyle`
 
     :root
     {
-        --color-primary: #E1E1E6;
+        --color-primary: #121214;
         --color-error:#EA524F;
         --color-text:#E1E1E6;
         --color-backgroundMain: #29292E;
@@ -48,7 +48,7 @@ export default createGlobalStyle`
             font-size: min(20px , 1.5vw);
 
         }
-        
+
     h1, h2, h3, h4, h5, h6, p, strong{
         font-weight: 500;
         font-family: 'Poppins';

@@ -13,17 +13,17 @@ export const Home = () =>{
             </ol>
 
             <ol className="descriptionList">
-                <h3>Desenvolvedor Front-End</h3>
+                <h2>Desenvolvedor Front-End</h2>
                 <p>React (HTML,  CSS,  JS) - Animations</p>
             </ol>
 
             <ol className="descriptionList">
-                <h3>UX-UI Designer - Google Professional Certificate </h3>
+                <h2>UX-UI Designer - Google Professional Certificate </h2>
                 <p>Design System, Jornada do usuário, Design e usabilidade</p>
             </ol>
 
             <ol className="descriptionList">
-                <h3>GitHub e Git </h3>
+                <h2>GitHub e Git </h2>
                 <p>Gerenciamento e controle de versões, branches</p>
             </ol>
           </div>

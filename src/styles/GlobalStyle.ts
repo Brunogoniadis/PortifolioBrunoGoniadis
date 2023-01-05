@@ -9,13 +9,7 @@ export default createGlobalStyle`
         --color-text:#E1E1E6;
         --color-backgroundMain: #29292E;
         --color-border: #7A7A7A;
-
-    font-size: 60%;
-    }
-    @media (min-width: 700px) {
-        :root 
-            {font-size: 62.5%;}
-    }
+  }
 
     * {
         margin:0;
@@ -26,7 +20,6 @@ export default createGlobalStyle`
 
     body,html{
         width: 100vw;
-        height: 100vh;
     }
 
     body {
@@ -39,24 +32,27 @@ export default createGlobalStyle`
 
     body, input, button, textarea{
         font-family: 'Poppins';
-        font-size: 1.6rem;
+        //font-size: 1.6rem;
     }
-    
+    h1{
+            font-size: min(3.5em , 3vw);
+            font-weight: 600;
+        }
+        h2{
+            font-size: min(40px , 2.2vw);
+        }
+        h3{
+            font-size: min(28px , 1.8vw);
+        }
+        p{
+            font-size: min(20px , 1.5vw);
+
+        }
+        
     h1, h2, h3, h4, h5, h6, p, strong{
         font-weight: 500;
         font-family: 'Poppins';
     }
-    h1{
-        font-size: 56px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 28px;
-    }
-    p{
-        font-size: 20px;
-    }
+
 
 `

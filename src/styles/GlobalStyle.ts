@@ -42,8 +42,9 @@ export default createGlobalStyle`
         font-size: 1.6rem;
     }
     
-    h1, h2, h3, h4, h5, h6, strong{
+    h1, h2, h3, h4, h5, h6, p, strong{
         font-weight: 500;
+        font-family: 'Poppins';
     }
     h1{
         font-size: 56px;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: black;
     margin: 10%;
-    justify-content: center;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     h1{
         margin-bottom: 30px;
     }
@@ -13,9 +13,18 @@ export const Container = styled.div`
             
         }
         .descriptionTopList{
-            margin-bottom: 36px;
+            margin-bottom: 42px;
         }
         .descriptionList{
-            margin-bottom: 16px;
+            margin-bottom: 28px;
+        }
+        .avatarContainer{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img{
+                width: 90%;
+                height: auto;
+            }
         }
 `

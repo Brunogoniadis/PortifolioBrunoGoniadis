@@ -1,7 +1,8 @@
 
 import { Main } from './styles/Main'
-import { Home } from './pages/Home'
 import { Header } from './components/Header'
+import { Home } from './pages/Home'
+import { Tecnologias } from './pages/Tecnologias'
 
 
 import GlobalStyle from './styles/GlobalStyle'
@@ -15,7 +16,7 @@ function App() {
         <Main> 
           <Header/>
           <Home></Home>
-          <Home></Home>
+          <Tecnologias></Tecnologias>
         </Main>
     </div>
   )

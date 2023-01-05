@@ -5,10 +5,12 @@ export default createGlobalStyle`
     :root
     {
         --color-primary: #121214;
+        --color-secondary:#4b31b9;
         --color-error:#EA524F;
         --color-text:#E1E1E6;
         --color-backgroundMain: #29292E;
         --color-border: #7A7A7A;
+        --color-backgroundCard: #fefefe;
   }
 
     * {
@@ -34,7 +36,7 @@ export default createGlobalStyle`
         font-family: 'Poppins';
         //font-size: 1.6rem;
     }
-    h1{
+        h1{
             font-size: min(3.5em , 3vw);
             font-weight: 600;
         }

@@ -9,3 +9,4 @@ export interface ICardContainer{
     card6?:ReactNode;
     card7?:ReactNode;
 }
+

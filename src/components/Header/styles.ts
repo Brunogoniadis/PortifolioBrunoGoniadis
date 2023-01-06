@@ -10,20 +10,15 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding-left:10%;
-    padding-right: 10%;
-
+    padding-left:10vw;
+    padding-right: 10vw;
     background-color: var(--color-primary);
     border-bottom: 1px solid var(--color-border);
-
     z-index: 1001;
     .descriptionPages{
         display: flex;
         
         flex-direction: row;
-
         gap: 0.5rem;
     }
-
 `

@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin: 10%;
+    margin: 10vw;
+    margin-top: 3vh ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    
     h1{
-        margin-bottom: 30px;
+        margin-bottom: 6vh;
     }
     
 

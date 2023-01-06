@@ -1,3 +1,6 @@
+
+
+
 import { CardContainer } from "../../components/CardContainer";
 import { Container } from "./styles";
 
@@ -15,6 +18,8 @@ export const Tecnologias = () => {
 
 
             <CardContainer
+
+                
 
                 card={
                     <Card

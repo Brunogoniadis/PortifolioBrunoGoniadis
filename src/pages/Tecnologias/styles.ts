@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin: 10%;
+    margin-right: 5%;
+    margin-left: 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     `

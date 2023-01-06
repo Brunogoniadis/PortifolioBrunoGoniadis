@@ -17,7 +17,7 @@ export const Container = styled.div`
     background-color: var(--color-primary);
     border-bottom: 1px solid var(--color-border);
 
-
+    z-index: 1001;
     .descriptionPages{
         display: flex;
         

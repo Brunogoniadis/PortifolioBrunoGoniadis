@@ -5,12 +5,11 @@ export const ContainerBaseCards = styled.div`
         display: flex;
         flex-direction: row;
         height: 100vh;
-        width: 95%;
+        width: 80vw;
         align-items: center;
         justify-content: space-between;
         
 
-        overflow: hidden;
 
 
     .descriptionTechnologyContainer{
@@ -22,7 +21,7 @@ export const ContainerBaseCards = styled.div`
         height: 50%;
     }
     .pdescriptionContainer{
-        padding: 25px;
+        padding-right: 25px;
         margin-top: 55px;
         width: 100%;
         height: 100%;

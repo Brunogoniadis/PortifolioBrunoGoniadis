@@ -13,20 +13,18 @@ export const Container = styled.div`
         margin-bottom: 6vh;
     }
     
-
-
-
-
-
         .textsDescriptionContainer{
             
         }
+
         .descriptionTopList{
             margin-bottom: 42px;
         }
+
         .descriptionList{
             margin-bottom: 28px;
         }
+        
         .avatarContainer{
             display: flex;
             align-items: center;

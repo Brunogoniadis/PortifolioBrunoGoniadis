@@ -4,15 +4,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     
-    h2{ font-size: min(25px); font-weight: 600; }
+    h2{ font-size: min(1.3em , 3vw); font-weight: 600; }
 
-    h3{ font-size: min(15px); }
+    h3{ font-size: min(0.9em, 1.8vw); }
     
     p{ font-size: min(14px); font-weight: 400; }
 
     .cardContainer{
-        height: 550px;
-        width: 270px;
+        height: 30vw;
+        width: 15vw;
         box-shadow: 2px 5px 10px 5px var(--color-primary);
 
         overflow: hidden;
@@ -20,6 +20,7 @@ export const Container = styled.div`
         
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: var(--color-backgroundCard);
 
         color: var(--color-primary);
@@ -42,7 +43,7 @@ export const Container = styled.div`
     .logoContainer{
         
         width :100% ;
-        height: 225px ;
+        height: 25vw ;
         background-color: aliceblue;
 
         box-shadow: 0.2rem 0.1rem 16rem 0.2rem var(--color-secondary);

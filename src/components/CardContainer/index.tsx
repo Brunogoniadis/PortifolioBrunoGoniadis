@@ -16,7 +16,7 @@ export const CardContainer = ({card, card2, card3}:ICardContainer) =>{
     function ReactJs (){
         setTextTec({
             title:"ReactJs",
-            description:"sdsd"
+            description:"Já aprofundado em JavaScript, optei por programar em React devida a extensa disponibilidade de conteudos da comunidade. Para mim, o uso de states"
     })}
 
     function Figma (){

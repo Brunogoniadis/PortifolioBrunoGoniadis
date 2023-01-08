@@ -29,13 +29,14 @@ export const ProjectContainer= styled.div`
         height: 10vw;
 
         border-radius: 0px 0px 135px 135px;
-        box-shadow: 0.2rem 0.1rem 16rem 0.2rem var(--color-secondary);
+        box-shadow: 0.2rem 0.1rem 16rem 0.9rem var(--color-primary);
 
 
         img{
             margin-top: 2vw;
             height: 100%;
             width: 85%;
+            border-radius: 6px;
         }
     }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectContainer= styled.button`
+export const ProjectContainer= styled.div`
     width: 22vw;
     height: 15vw;
     

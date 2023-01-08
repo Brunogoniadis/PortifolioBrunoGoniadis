@@ -3,6 +3,9 @@ import { IProject } from "./types";
 
 
 export const Project = ({image, title}:IProject) =>{
+
+
+
     return(
         <>
             <ProjectContainer>

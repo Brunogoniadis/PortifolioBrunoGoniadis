@@ -25,4 +25,8 @@ export const Container=styled.div`
 
         grid-template-columns: auto auto auto;
     }
+    button{
+        background-color: transparent;
+        border: none;
+    }
 `

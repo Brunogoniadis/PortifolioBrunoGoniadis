@@ -23,6 +23,9 @@ export default createGlobalStyle`
     body,html{
         width: 100vw;
     }
+    button{
+        cursor: pointer;
+    }
 
     body {
         background: var(--color-backgroundMain);

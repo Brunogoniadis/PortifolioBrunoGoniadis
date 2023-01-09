@@ -16,19 +16,19 @@ export const CardContainer = ({card, card2, card3}:ICardContainer) =>{
     function ReactJs (){
         setTextTec({
             title:"ReactJs",
-            description:"Já aprofundado em JavaScript, optei por programar em React devida a extensa disponibilidade de conteudos da comunidade. Para mim, o uso de states"
+            description:"Já aprofundado em JavaScript, optei por programar em React devida a extensa disponibilidade de conteídos da comunidade. Para mim, o uso dos Hooks fazem do React uma ferramenta muito alem do JavaScript em termos de reuso e organização."
     })}
 
     function Figma (){
         setTextTec({
             title:"Figma",
-            description:"sdsd"
+            description:"Com o Figma eu consegui ter as primeiras noções de design e esboçar telas de sistemas ou designs simples."
     })}
 
     function GitHub (){
         setTextTec({
             title:"GitHub",
-            description:""
+            description:"Excelente ferramenta para manipulação e gestão de projetos em programação. Essencial para qualquer programador que queira estar em contato com a comunidade e trablhar em conjunto em equipe"
     })}
 
 

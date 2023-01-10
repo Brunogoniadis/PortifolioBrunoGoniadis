@@ -12,7 +12,6 @@ export const Container=styled.div`
 
     align-items: center;
 
-
     .projectContainer{
 
 
@@ -29,4 +28,6 @@ export const Container=styled.div`
         background-color: transparent;
         border: none;
     }
+
 `
+

@@ -11,13 +11,14 @@ export const Modal =({isOpen , setOpen, title, description,image}:IModal)=>{
 
     return(
         <ModalContainer >
-            <button className="overlay" onClick={()=>{setOpen(false)}}>
-                <div className="content">
+            <div className="overlay" onClick={()=>{setOpen(false)}}>
+
+            </div>
+            <div className="content">
                     <h2>{title}</h2>
                     <p>{description}</p>
                     <img src={image} alt="" />
-                </div>
-            </button>
+            </div>
         </ModalContainer>
     )
 

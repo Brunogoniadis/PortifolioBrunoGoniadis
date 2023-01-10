@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ModalContainer=styled.div`
     position: fixed;
     top: 0vw;
-    z-index: 1000;
 
     width: 100%;
     height: 100vh;
@@ -22,7 +21,7 @@ export const ModalContainer=styled.div`
 
     .overlay{
         
-        cursor: auto;
+
 
         width: 100%;
         height: 100%;
@@ -31,22 +30,25 @@ export const ModalContainer=styled.div`
         align-items: center;
         justify-content: center;
 
-        
+        z-index:2;
+        position:absolute;
     }
     .content{
 
         width: 80%;
         height: 80%;
-
+        top: 10vh;
+        left: 10vw;
         display: flex;
         align-items: center;
         justify-content: center;
 
         background-color: aliceblue;
+        z-index:4;
+        position:absolute;
+        img{
+            width: 60%;
+        } 
+    }
 
-    }
-    button{
-        width: 50px;
-        height: 50px;
-    }
 `

@@ -30,7 +30,7 @@ export const ModalContainer=styled.div`
         align-items: center;
         justify-content: center;
 
-        z-index:2;
+        z-index:10;
         position:absolute;
     }
     .content{
@@ -44,7 +44,7 @@ export const ModalContainer=styled.div`
         justify-content: center;
 
         background-color: aliceblue;
-        z-index:4;
+        z-index:15;
         position:absolute;
         img{
             width: 60%;

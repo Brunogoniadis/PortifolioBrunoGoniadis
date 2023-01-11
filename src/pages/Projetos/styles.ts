@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container=styled.div`
     margin: 10vw;
-    margin-top: 3vh ;
 
     height: 100vh;
 
@@ -11,14 +10,13 @@ export const Container=styled.div`
     justify-content: space-around;
 
     align-items: center;
-
+    
     .projectContainer{
 
 
         display: grid;
-        justify-content: space-between;
-        column-gap: 50px;
-        row-gap: 3vw;
+        column-gap: 0.1vw;
+        row-gap: 2.4vw;
 
         width: 100%;
 
@@ -28,6 +26,7 @@ export const Container=styled.div`
         background-color: transparent;
         border: none;
     }
+    
 
 `
 

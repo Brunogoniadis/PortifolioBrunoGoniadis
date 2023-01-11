@@ -2,26 +2,43 @@ import { ProjectContainer } from "./styles";
 import { IProject } from "./types";
 
 
-export const Project = ({image, title}:IProject) =>{
+export const Project = ({ image, title, type, lang }: IProject) => {
 
 
 
-    return(
-        <>
-            <ProjectContainer>
+    return (
+        <ProjectContainer>
 
-                <div className="circleContainer">
-                    <img src={image} alt="" />
+            <div className="imgContainer">
+                <img src={image} alt="" />
+
+                <div className="descriptionContainer">
+
+                    <h3 className="title">
+                        {title}
+                    </h3>
+
+                    <div className="pContainer">
+                        <p>
+                        • {type}
+                        </p>
+
+                        <p>
+                        • {lang}
+                        </p>
+                    </div>
+
+
+
                 </div>
 
-                
-                
-                <div className="imageProject">
-                    <p>{title}</p>
-                </div>
-            </ProjectContainer>
+            </div>
 
-        </>
 
+
+
+
+
+        </ProjectContainer>
     )
 }

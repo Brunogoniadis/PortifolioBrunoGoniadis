@@ -58,6 +58,8 @@ export const Projetos = () => {
 
         <Container >
 
+            <h2>Projetos</h2>
+
 
             <Modal 
                 isOpen={open} 
@@ -67,17 +69,13 @@ export const Projetos = () => {
                 image={descriptions.image}
             ></Modal>
 
-
-
-
-            <h2>Projetos</h2>
-
-
             <div className="projectContainer">
 
-                <button onClick={onOpenModalSaldaoMjv} > <Project image={saldaoMjv} title="Saldão Mjv"/></button>
+                <button onClick={onOpenModalSaldaoMjv} > <Project image={saldaoMjv} title="Saldão Mjv" type='Bootcamp' lang='ReactTs'/>
+                    
+                </button>
 
-                <button onClick={onOpenModalCoinValue}> <Project image={coinValue} title="Coin Value" /></button>
+                <button onClick={onOpenModalCoinValue}> <Project image={coinValue} title="Coin Value" type='Pessoal' lang='ReactJs' /></button>
 
                 <button><Project image={barbaraCard} title="Card Digital" /></button>
 

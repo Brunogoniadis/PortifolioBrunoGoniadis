@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const ProjectContainer= styled.div`
-    height: 380px;
-    width: 520px;
+    height: 20vw;    
+    width: 30vw;
+
+
+    align-items: center;
+
 
 
     color:var(--color-text);
 
+
     display: flex;
     flex-direction: column;
     
-
-    align-items: center;
-    justify-content: space-between;
     
 
     h3{
@@ -29,8 +31,10 @@ export const ProjectContainer= styled.div`
     flex-direction: column;
 
         img{
+            width: 26vw;
+            height: 14vw;
             margin-top: 1vw;
-            height: 24vh;
+
             border-radius: 15px;
         }
 

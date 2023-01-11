@@ -1,26 +1,35 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-    margin: 10vw;
-
+    
     height: 100vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 
-    align-items: center;
     
+    align-items: center;
+    justify-content: center;
+
     .projectContainer{
+
+        
+
+        justify-content: center;
+        margin: 20px;
+
+        height: 100vw;
+        width: 100vw;
 
 
         display: grid;
-        column-gap: 0.1vw;
-        row-gap: 1vw;
-
-        width: 100%;
-
         grid-template-columns: auto auto auto;
+        
+        column-gap: 0.5vh;
+
+
+
+
     }
     button{
         background-color: transparent;

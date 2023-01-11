@@ -16,7 +16,7 @@ export const Container=styled.div`
 
         display: grid;
         column-gap: 0.1vw;
-        row-gap: 2.4vw;
+        row-gap: 1vw;
 
         width: 100%;
 
@@ -26,7 +26,6 @@ export const Container=styled.div`
         background-color: transparent;
         border: none;
     }
-    
 
 `
 

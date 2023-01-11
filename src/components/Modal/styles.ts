@@ -35,19 +35,26 @@ export const ModalContainer=styled.div`
     }
     .content{
 
-        width: 80%;
-        height: 80%;
+        width: 50%;
+        height: 90%;
+        border-radius: 15px;
+
         top: 10vh;
-        left: 10vw;
+        left: 25vw;
+
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
         background-color: aliceblue;
+
+
+
         z-index:15;
         position:absolute;
         img{
-            width: 60%;
+            width: 100%;
         } 
     }
 

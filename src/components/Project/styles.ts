@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const ProjectContainer= styled.div`
-    height: 15vw;
-    
-    background-color: var(--color-backgroundCard);
+    height: 380px;
+    width: 520px;
+
 
     color:var(--color-text);
 
     display: flex;
     flex-direction: column;
-
+    
 
     align-items: center;
     justify-content: space-between;
-    background-color:transparent;
+    
 
     h3{
         font-size: min(16px , 1.2vw);

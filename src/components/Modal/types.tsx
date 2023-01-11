@@ -8,4 +8,8 @@ export interface IModal{
     description: string;
     image:string;
 
+    type:string;
+    lang: string;
+    linkOfProject: string;
+
 }

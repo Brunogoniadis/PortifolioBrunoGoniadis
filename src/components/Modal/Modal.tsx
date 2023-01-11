@@ -5,7 +5,7 @@ import { IModal } from "./types";
 import {useState} from 'react'
 
 
-export const Modal =({isOpen , setOpen, title, description,image}:IModal)=>{
+export const Modal =({isOpen , setOpen, title, description,image, type, lang}:IModal)=>{
 
     if (!isOpen ) return null;
 
@@ -15,9 +15,18 @@ export const Modal =({isOpen , setOpen, title, description,image}:IModal)=>{
 
             </div>
             <div className="content">
-                    <h2>{title}</h2>
-                    <p>{description}</p>
-                    <img src={image} alt="" />
+                <h2>{title}</h2>
+                <img src={image} alt="" />
+                
+                <div className="pContainer">
+                    <p>• {type}</p>
+                    <p>• {lang}</p>
+                </div>
+
+
+                <h3>{description}</h3>
+
+
             </div>
         </ModalContainer>
     )

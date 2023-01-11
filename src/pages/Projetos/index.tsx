@@ -28,7 +28,9 @@ export const Projetos = () => {
     const [descriptions, setDescriptions] = useState({
         title:'', 
         description:'',
-        image:''
+        image:'',
+        type: '',
+        lang: ''
     });
 
     const onOpenModal = () => {
@@ -41,6 +43,8 @@ export const Projetos = () => {
             title:"Saldão MJV",
             description:"Aplicação ecommerce.",
             image: MjvMarkketModal,
+            type: "BootCamp",
+            lang: "ReactJS"
     })
     }
     const onOpenModalCoinValue = () => {
@@ -49,6 +53,8 @@ export const Projetos = () => {
             title:"Valor de Moeda",
             description:"Aplicação que mostra a temperatura atual.",
             image: coinValueModal,
+            type: "Pessoal",
+            lang: "ReactJS"
     })
     }
 
@@ -67,6 +73,8 @@ export const Projetos = () => {
                 title={descriptions.title} 
                 description={descriptions.description}
                 image={descriptions.image}
+                type={descriptions.type}
+                lang={descriptions.lang}
             ></Modal>
 
             <div className="projectContainer">

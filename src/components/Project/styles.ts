@@ -16,11 +16,11 @@ export const ProjectContainer= styled.div`
     
 
     h3{
-        font-size: min(16px , 1.2vw);
+        font-size: min(18px , 1.4vw);
         font-weight: normal;
     }
     p{
-        font-size: min(13px , 1.0vw);
+        font-size: min(15px , 1.2vw);
         font-weight: normal;
     }
 

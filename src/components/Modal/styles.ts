@@ -37,9 +37,9 @@ export const ModalContainer=styled.div`
 
         width: 50%;
         height: 90%;
-        border-radius: 15px;
+        border-radius: 10px;
 
-        top: 10vh;
+        top: 9vh;
         left: 25vw;
 
         display: flex;
@@ -47,15 +47,33 @@ export const ModalContainer=styled.div`
         align-items: center;
         justify-content: center;
 
-        background-color: aliceblue;
+        background-color: var(--color-backgroundMain);
 
 
 
         z-index:15;
         position:absolute;
+        
         img{
             width: 100%;
         } 
+
+        h2{
+            color: red;
+            margin-top: -75px;
+        }
+
+        .pContainer{
+
+            margin-top: 2px;
+            padding: 6px;
+
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            gap: 20px;
+        }
     }
 
 `

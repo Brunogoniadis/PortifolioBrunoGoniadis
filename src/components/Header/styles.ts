@@ -14,7 +14,7 @@ export const Container = styled.div`
     padding-right: 10vw;
     background-color: var(--color-primary);
     border-bottom: 1px solid var(--color-border);
-    z-index: 950;
+    z-index: 1001;
     .descriptionPages{
         display: flex;
         

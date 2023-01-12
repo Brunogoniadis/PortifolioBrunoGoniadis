@@ -24,7 +24,7 @@ export const Modal =({isOpen , setOpen, title, description,image, type, lang}:IM
                 </div>
 
 
-                <h3>{description}</h3>
+                <p>{description}</p>
 
 
             </div>

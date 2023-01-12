@@ -18,6 +18,7 @@ export const ModalContainer=styled.div`
     animation: example 0.2s;
 
 
+    font-weight: normal;
 
     .overlay{
         
@@ -59,8 +60,9 @@ export const ModalContainer=styled.div`
         } 
 
         h2{
-            color: red;
-            margin-top: -75px;
+            
+            margin-top: -90px;
+            margin-bottom: 10px;
         }
 
         .pContainer{

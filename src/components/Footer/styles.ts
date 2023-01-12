@@ -11,4 +11,6 @@ export const Container= styled.div`
 
     background-color: var(--color-primary);
     border-top: 1px solid var(--color-border);
+
+    font-weight: normal;
 `

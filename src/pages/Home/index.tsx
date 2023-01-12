@@ -1,5 +1,6 @@
 import { Container } from "./styles"
 import  Avatar  from "../../../src/assets/Avatar.png";
+import  Grid  from "../../../src/assets/gridhalf.svg";
 
 export const Home = () =>{
     return(
@@ -28,7 +29,9 @@ export const Home = () =>{
             </ol>
           </div>
           <div className="avatarContainer">
-            <img src={Avatar}></img>
+            <img className="avatar" src={Avatar}></img>
+            <img className="grid" src={Grid} alt="" />
+            <div className="laser"></div>
           </div>
         </Container>
     )

@@ -8,4 +8,20 @@ export const Container=styled.div`
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+
+    .pinContainer{
+
+        width: 80vw;
+        height: 90vh;
+        margin-top: 5vh;
+
+        align-items: center;
+        justify-content: space-around;
+
+        display: grid;
+        border: 1px solid black;
+
+        grid-template-columns: auto auto auto auto;
+
+    }
 `

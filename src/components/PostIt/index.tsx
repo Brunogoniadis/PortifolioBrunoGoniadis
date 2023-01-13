@@ -2,7 +2,7 @@ import { Container } from "./style"
 import { IPost } from "./types"
 
 
-export const PostIt = ({ }: IPost) => {
+export const PostIt = () => {
     return (
         <>
             <Container >

@@ -10,6 +10,11 @@ export const Container=styled.div`
     align-items: center;
     height: 100vh;
 
+    h3{
+        width: 50vw;
+        margin: 25px;
+        font-weight: normal;
+    }
     .pinContainer{
 
         width: 80vw;
@@ -20,13 +25,27 @@ export const Container=styled.div`
         justify-content: space-around;
 
         display: grid;
-        border: 1px solid black;
 
         grid-template-columns: auto auto auto auto auto;
     
         PostIt{
             color: red;
         }
+    }
+    .buttonContainer{
+        width: 85vw;
+        height: 35vh;
+
+
+        align-items: center;
+
+        display: grid;
+
+        grid-template-columns: auto auto auto auto;
+
+        justify-content: start;
+
+        gap: 35px;
     }
 
 `

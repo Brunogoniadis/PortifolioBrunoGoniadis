@@ -19,6 +19,7 @@ export const Container = styled.div`
 
     transform: rotate(${() => Math.floor(Math.random() * 13) - 8}deg);
 
+    z-index: 1;
     
 
     padding: 25px;

@@ -9,6 +9,9 @@ export const Container=styled.div`
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    width: 85vw;
+
+    position: relative;
 
     h3{
         width: 50vw;

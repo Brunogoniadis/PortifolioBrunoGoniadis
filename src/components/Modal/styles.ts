@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ModalContainer=styled.div`
     position: fixed;
+    z-index: 10001;
     top: 0vw;
 
     width: 100%;
@@ -31,8 +32,8 @@ export const ModalContainer=styled.div`
         align-items: center;
         justify-content: center;
 
-        z-index:10;
         position:absolute;
+
     }
     .content{
 
@@ -43,6 +44,8 @@ export const ModalContainer=styled.div`
         top: 9vh;
         left: 25vw;
 
+
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,7 +55,7 @@ export const ModalContainer=styled.div`
 
 
 
-        z-index:15;
+        z-index:1001;
         position:absolute;
         
         img{

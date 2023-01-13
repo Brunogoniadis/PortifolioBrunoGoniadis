@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { PostIt } from "../../components/PostIt";
 
 export const Container=styled.div`
     margin: 10vw;
@@ -21,7 +22,14 @@ export const Container=styled.div`
         display: grid;
         border: 1px solid black;
 
-        grid-template-columns: auto auto auto auto;
-
+        grid-template-columns: auto auto auto auto auto;
+    
+        PostIt{
+            color: red;
+        }
     }
+
 `
+
+
+

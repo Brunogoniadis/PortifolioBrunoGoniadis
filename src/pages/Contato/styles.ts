@@ -8,34 +8,39 @@ export const Container=styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
     width: 85vw;
+
+
 
     position: relative;
 
-    h3{
+    p{
         width: 50vw;
         margin: 25px;
         font-weight: normal;
     }
     .pinContainer{
 
-        width: 80vw;
-        height: 90vh;
+        height: 53vh;
+        width: 60vw;
         margin-top: 5vh;
 
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
 
         display: grid;
 
-        grid-template-columns: auto auto auto auto auto;
-    
-        PostIt{
-            color: red;
-        }
+        padding-top: 35px;
+
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 6vw;
+        grid-row-gap: 5vh ;
+
+        overflow: scroll;
+        overflow-x: hidden;
     }
     .buttonContainer{
+        
         width: 85vw;
         height: 35vh;
 

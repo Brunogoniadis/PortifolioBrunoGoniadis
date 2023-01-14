@@ -29,9 +29,9 @@ export const Container = styled.div`
         width: 1vw;
         height: 4vh;
         background-color: aliceblue;
-        bottom: 70px;
+        bottom: 13vh;
 
-        left: ${() => Math.floor(Math.random() * (30 - 10 + 1) + 10)}px;
+        right: ${() => Math.floor(Math.random() * (25 - (-2) + 1) + (-5))}px;
 
         transform: rotate(${() => Math.floor(Math.random() * 18)}deg);
 
@@ -42,7 +42,7 @@ export const Container = styled.div`
         width: 1vw;
         height: 4vh;
         background-color: aliceblue;
-        bottom: 110px;
+        bottom: 16.5vh;
 
         left: ${() => Math.floor(Math.random() * (210 - 200 + 1) + 190)}px;
 

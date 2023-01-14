@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import { PostIt } from "../../components/PostIt";
 
-export const Container=styled.div`
-    margin: 10vw;
+export const Container = styled.div`
+
     margin-top: 3vh ;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 100%;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
     align-items: center;
-    width: 85vw;
 
-
-
-    position: relative;
 
     p{
         width: 50vw;
@@ -40,7 +40,7 @@ export const Container=styled.div`
         overflow-x: hidden;
     }
     .buttonContainer{
-        
+
         width: 85vw;
         height: 35vh;
 
@@ -54,6 +54,33 @@ export const Container=styled.div`
         justify-content: start;
 
         gap: 35px;
+    }
+
+    .formContainer{
+
+        width: 35%;
+        height: 15vw;
+
+
+        margin-top: 5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        margin-bottom: 8vh;
+
+        Input{
+            width: 50vh;
+        }
+
+        Button{     
+
+            margin-top: 5vh;
+            width: 50vh;
+        }
     }
 
 `

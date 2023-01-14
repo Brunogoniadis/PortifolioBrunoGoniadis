@@ -1,6 +1,8 @@
 import { ButtonSocial } from "../../components/ButtonSocial";
 import { PostIt } from "../../components/PostIt";
 import { Container } from "./styles";
+import { useForm } from "react-hook-form";
+import { Input } from "../../components/Input";
 
 
 
@@ -8,7 +10,7 @@ export const Contato = () =>{
     return(
         <Container>
             <h2>Deixe seu recado!</h2>
-            <h3>Quer deixar um elogio, tem sugestões de melhorias  no portfólio ou já participou de algum projeto comigo? Comenta aqui!</h3>
+            <p>Quer deixar um elogio, tem sugestões de melhorias  no portfólio ou já participou de algum projeto comigo? Comenta aqui!</p>
             <div className="pinContainer">
 
                 <PostIt />
@@ -22,6 +24,19 @@ export const Contato = () =>{
                 <PostIt/>
 
                 <PostIt/>
+
+                <PostIt/>
+
+            </div>
+
+            <div className="formContainer">
+
+                    <Input id="name" className="inputName" label="Seu nome" type="text"> </Input>
+                    <Input id="office" className="inputCargo" label="Seu cargo(Opcional)" type="text"></Input>
+
+                    <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message"></Input>
+                    <button className="button" >Enviar</button>
+
 
             </div>
 

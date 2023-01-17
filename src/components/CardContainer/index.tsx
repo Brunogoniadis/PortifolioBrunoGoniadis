@@ -9,7 +9,7 @@ export const CardContainer = ({card, card2, card3}:ICardContainer) =>{
     
     const [textTec, setTextTec] = useState({
         title:'Clique em um botão', 
-        description:'Para saber da minha jornada'
+        description:''
     });
 
     

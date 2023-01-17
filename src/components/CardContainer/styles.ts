@@ -7,10 +7,10 @@ export const ContainerBaseCards = styled.div`
         height: 100vh;
         width: 80vw;
         align-items: center;
-        justify-content: space-between;
+
         
 
-
+ 
 
     .descriptionTechnologyContainer{
         display: flex;
@@ -44,8 +44,23 @@ export const ContainerBaseCards = styled.div`
         border: none;
 
     }
-    @media (max-width: 512px) {
-        display: none;
+    @media (max-width: 512px){
+
+        width: 85%;
+
+        flex-direction: column;
+            .descriptionTechnologyContainer{
+                margin-top: 10vh;
+                width: 100%;
+            }
+            .cardsBase{
+                width: 100%;
+                height: auto;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+
     }
 
 `

@@ -58,8 +58,23 @@ export default createGlobalStyle`
         font-family: 'Poppins';
     }
 
+    
     @media (max-width: 512px) {
 
+        h1{
+            font-size: 1.5em;
+        }
+        h2{
+            font-size: 1.2em;
+        }
+        h3{
+            font-size: 1.0em;
+            font-weight: normal;
+        }
+        p{
+            font-size: 0.8em;
+            font-weight: normal;
+        }
     }
 
 

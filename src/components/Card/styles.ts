@@ -54,11 +54,11 @@ export const Container = styled.div`
         justify-content: center;
 
         img{
-            @keyframes example {
+            @keyframes logoCard {
                 from {width:0%}
                 to {width: 75%;}
             }
-            animation: example 2.5s;
+            animation: logoCard 2.5s;
             margin-top: 3.5vh;
             width: 75%;
 
@@ -84,6 +84,30 @@ export const Container = styled.div`
         padding-top: 15px;
     }
 
+    @media (max-width: 512px){
+        p{
+            font-size: 0.8em;
+            color: red;
+        }
+        h3{
+            font-weight: bold;
+        }
+        .cardContainer{
+            height: 45vw;
+            width: 25vw;
+        }
+        .logoContainer{
+            height: 10vw ;
+            
+            img{
+                width: 40%;
+                @keyframes logoCard {
+                from {width:0%} to {width: 40%;}
+            }
+                animation: logoCard 2.5s;
+            }
 
+        }
+    }
 
 `

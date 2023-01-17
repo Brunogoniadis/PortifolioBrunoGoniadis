@@ -22,4 +22,7 @@ export const Container = styled.div`
         flex-direction: row;
         gap: 0.5rem;
     }
+    @media (max-width: 512px) {
+        display: none;
+    }
 `

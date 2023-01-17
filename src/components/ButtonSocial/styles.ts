@@ -3,8 +3,8 @@ import { Link } from "@reach/router";
 
 
 export const Container = styled.div`
-    width: 120px;
-    height: 120px;
+    width: 12vw;
+    height: 12vw;
 
     border: none;
     border-radius: 6px;

@@ -44,5 +44,8 @@ export const ContainerBaseCards = styled.div`
         border: none;
 
     }
+    @media (max-width: 512px) {
+        display: none;
+    }
 
 `

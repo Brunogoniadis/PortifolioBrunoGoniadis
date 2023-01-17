@@ -30,8 +30,6 @@ export const Home = () =>{
           </div>
           <div className="avatarContainer">
             <img className="avatar" src={Avatar}></img>
-            <img className="grid" src={Grid} alt="" />
-            <div className="laser"></div>
           </div>
         </Container>
     )

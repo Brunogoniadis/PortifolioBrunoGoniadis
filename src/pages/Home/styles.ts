@@ -2,17 +2,29 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin: 10vw;
-    margin-top: 3vh ;
+    margin-top: 10vh ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
     
-    h1{
-        margin-bottom: 6vh;
-    }
-    
+    height: auto;
+
+        h1{
+            font-size: min(3.5em , 3vw);
+            font-weight: 600;
+            margin-bottom: 6vh;
+        }
+        h2{
+            font-size: min(40px , 2.2vw);
+        }
+        h3{
+            font-size: min(28px , 1.8vw);
+        }
+        p{
+            font-size: min(20px , 1.5vw);
+        }
+
         .textsDescriptionContainer{
             
         }
@@ -79,5 +91,47 @@ export const Container = styled.div`
 
 
             }
+        }
+        @media (max-width: 512px) {
+            flex-direction: column-reverse;
+            h1{
+                font-size: 1.5em;
+                text-align: center;
+                left: 20vw;
+                right: 20vw;
+            }
+            h2{
+                font-size: 1.2em;
+                font-weight: normal;
+            }
+            h3{
+                font-size: 1.0em;
+                font-weight: normal;
+
+            }
+            p{
+                font-size: 0.8em;
+                font-weight: normal;
+
+            }   
+
+            flex-direction: column;
+            
+
+            .textsDescriptionContainer{
+                width: 100%;
+                text-align: center;
+
+            }
+
+            .avatarContainer{
+
+                .avatar{
+                    width: 20%;
+                    position: relative;
+                }
+            }
+
+
         }
 `

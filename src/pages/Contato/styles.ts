@@ -48,22 +48,7 @@ export const Container = styled.div`
         overflow: scroll;
         overflow-x: hidden;
     }
-    .buttonContainer{
 
-        width: 85vw;
-        height: 35vh;
-
-
-        align-items: center;
-
-        display: grid;
-
-        grid-template-columns: auto auto auto auto;
-
-        justify-content: start;
-
-        gap: 35px;
-    }
 
     .formContainer{
 
@@ -128,6 +113,22 @@ export const Container = styled.div`
                 }
 
             }
+        
+    }
+    .buttonContainer{
+
+        width: 85vw;
+        height: 35vh;
+
+        align-items: center;
+
+        display: grid;
+
+        grid-template-columns: auto auto auto auto;
+
+        justify-content: start;
+
+        gap: 35px;
     }
 
 `

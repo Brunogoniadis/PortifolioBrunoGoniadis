@@ -70,6 +70,7 @@ export const Projetos = () => {
                 image={descriptions.image}
                 type={descriptions.type}
                 lang={descriptions.lang}
+                linkOfProject='null'
             ></Modal>
 
             <div className="projectContainer">

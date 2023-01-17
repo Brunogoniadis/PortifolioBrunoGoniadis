@@ -1,8 +1,8 @@
 
 export interface IProject{
-    image:string;
-    title:string;
-    type:string;
-    lang:string;
+    image?:string;
+    title?:string;
+    type?:string;
+    lang?:string;
 
 }

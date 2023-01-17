@@ -27,8 +27,8 @@ export const ProjectContainer= styled.div`
     }
 
     .imgContainer{
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
         img{
             width: 26vw;
@@ -57,6 +57,35 @@ export const ProjectContainer= styled.div`
         }
     }
 
+    @media (max-width: 512px){
+        
 
+        h1{
+            font-size: 1.5em;
+        }
+        h2{
+            font-size: 1.2em;
+            }
+
+        h3{
+            font-size: 1.0em;
+            font-weight: normal;
+            }
+
+        p{
+            font-size: 0.8em;
+            font-weight: normal;
+            }
+        
+        
+        .imgContainer{
+            img{
+                width: auto;
+                height: 24vw;
+                margin-top: 1vw;
+                border-radius: 15px;
+        }
+        }
+    }
 
 `

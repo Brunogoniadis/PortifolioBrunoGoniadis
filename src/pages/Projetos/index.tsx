@@ -15,11 +15,6 @@ import MjvMarkketModal from "../../assets/projetos/modalImage/MjvMarkketModal.pn
 import coinValueModal from "../../assets/projetos/modalImage/coinValueModal.png"
 
 
-
-
-
-
-
 export const Projetos = () => {
 
 

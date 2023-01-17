@@ -87,7 +87,6 @@ export const Container = styled.div`
     @media (max-width: 512px){
         p{
             font-size: 0.8em;
-            color: red;
         }
         h3{
             font-weight: bold;

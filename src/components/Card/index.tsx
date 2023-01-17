@@ -2,7 +2,7 @@ import { Container } from "./styles";
 import react from "../../assets/react.svg"
 import { ICardProps } from "./types";
 
-export const Card = ({img, title, type1, type2, description, color}:ICardProps) => {
+export const Card = ({img, title, type1, type2, description}:ICardProps) => {
     return (
         <Container>
             <div className="cardContainer">

@@ -6,5 +6,4 @@ export interface ICardProps
     type1:string;
     type2:string;
     description:string;
-    color:string
 }

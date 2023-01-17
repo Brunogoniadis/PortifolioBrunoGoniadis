@@ -27,8 +27,7 @@ export const Tecnologias = () => {
                         title="ReactJs"
                         type1="Framework"
                         type2="Front-End"
-                        description=
-                        "Linguagem single page"
+                        description="Linguagem single page"
                     ></Card>
 
                 }
@@ -38,8 +37,7 @@ export const Tecnologias = () => {
                         title="Figma"
                         type1="Tool"
                         type2="Design"
-                        description=
-                        "Aplicação de design"
+                        description="Aplicação de design"
                     ></Card>
                 }
                 card3={

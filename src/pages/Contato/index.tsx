@@ -4,6 +4,7 @@ import { Container } from "./styles";
 import { useForm } from "react-hook-form";
 import { Input } from "../../components/Input";
 
+import {BiSend} from "react-icons/bi"
 
 
 export const Contato = () =>{
@@ -11,6 +12,8 @@ export const Contato = () =>{
         <Container>
             <h2>Deixe seu recado!</h2>
             <p>Quer deixar um elogio, tem sugestões de melhorias  no portfólio ou já participou de algum projeto comigo? Comenta aqui!</p>
+            
+            
             <div className="pinContainer">
 
                 <PostIt />
@@ -31,12 +34,14 @@ export const Contato = () =>{
 
             <div className="formContainer">
 
-                    <Input id="name" className="inputName" label="Seu nome" type="text"> </Input>
-                    <Input id="office" className="inputCargo" label="Seu cargo(Opcional)" type="text"></Input>
 
-                    <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message"></Input>
-                    <button className="button" >Enviar</button>
-
+                    <div className="inputUserNameData">
+                        <Input id="name" className="inputName" label="Seu nome" type="text"> </Input>
+                        <Input id="office" className="inputCargo" label="Seu cargo(Opcional)" type="text"></Input>
+                        <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message" ></Input>
+                        
+                    </div>
+                    <button><BiSend></BiSend></button>
 
             </div>
 

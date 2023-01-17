@@ -24,11 +24,20 @@ export const Container = styled.div`
         height: 53vh;
         width: 60vw;
         margin-top: 5vh;
+        margin-bottom: -2vh;
 
         align-items: center;
         justify-content: center;
 
         display: grid;
+
+        ::-webkit-scrollbar{
+            width: 10px;
+            background-color: var(--color-primary);
+        }  ::-webkit-scrollbar-thumb {
+            background-color: var(--color-secondary);
+        }
+
 
         padding-top: 35px;
 
@@ -58,11 +67,10 @@ export const Container = styled.div`
 
     .formContainer{
 
-        width: 35%;
+        width: 60vw;
         height: 15vw;
+        
 
-
-        margin-top: 5vh;
 
         display: flex;
         flex-direction: column;
@@ -72,15 +80,57 @@ export const Container = styled.div`
 
         margin-bottom: 8vh;
 
-        Input{
-            width: 50vh;
-        }
 
-        Button{     
+     
+        .inputUserNameData{
+            width: 60vw;
+            height: 6vw;
+            display: grid;
 
-            margin-top: 5vh;
-            width: 50vh;
+            grid-template-columns: auto auto auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            justify-content: space-around;
+
+            .inputName{
+                width: 12vw;
+            }
+            .inputCargo{
+                width: 12vw;
+
+            }
+            .inputMensager{
+                width:35vw;
+            }
         }
+        Button{
+                background-color: var(--color-secondary);
+                width: 45px;
+                height: 45px;
+
+                position: relative;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                top:-4.2vw;
+                left: 28.5vw;
+
+                z-index: 1001;
+
+                border: none;
+                border-radius: 50% 8% 8% 50%;
+
+                :hover{
+                    box-shadow: 0 0 20px var(--color-secondary);
+                }
+
+            }
     }
 
 `

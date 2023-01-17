@@ -6,11 +6,12 @@ export const Wrapper = styled.div`
     position: relative;
 ` 
 export const Icon = styled.div`
-    position: absolute;
-    top:-90%;
-    left: 88%;
-    transform: translateY(-50%);
+    position: relative;
+    bottom:3.2vh;
+    left: 72vh;
     z-index:1001;
+
+    display: flex;
 `
 
 export const Container = styled.div`
@@ -18,14 +19,13 @@ export const Container = styled.div`
     div {
         height: 54px;
         
-        width: 100%;
-        position: relative;
+        width: auto;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     
         color: black;
 
-        margin-top: 2vh;
+        
         input {
             width: 100%;
             height: 100%;
@@ -35,25 +35,33 @@ export const Container = styled.div`
             display: flex;
             color: black;
             border-radius: 5px;
-            border-color: var(--color-border);
+            border-color: var(--color-secondary);
+            z-index: 20;
         :focus{
-            border: 2px solid var(--primary-color);
+            box-shadow: 0 0 20px var(--color-secondary);
+
+
+
         }
+
         }
         label {
             display: flex;
             align-items: center;
             height: 100%;
-    
+            z-index: 20;
+            user-select: none;
+
             position: absolute;
             top: 0;
             padding-left: 20px;
             transition: top 0.5s, left 0.3s; 
         }
         input:is(:focus, :not(:placeholder-shown)) + label {
-            top: -10px;
+            top: -20px;
             left: 10px;
-            
+            user-select: none;
+
             height: fit-content;
             padding: 3px 10px;
             border-radius: 14px;

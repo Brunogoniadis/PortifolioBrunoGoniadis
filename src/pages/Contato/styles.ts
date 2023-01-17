@@ -132,6 +132,10 @@ export const Container = styled.div`
     }
     @media (max-width: 512px) {
 
+        h2{
+            margin-bottom: -2vh;
+        }
+
         padding-left: 0;
         padding-right: 0;
 
@@ -140,7 +144,6 @@ export const Container = styled.div`
         }
 
         .pinContainer{
-            background-color:blue;
             width: 95%;
             margin-top: -2vh;
 

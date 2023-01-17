@@ -47,7 +47,25 @@ export const Container = styled.div`
         left: ${() => Math.floor(Math.random() * (210 - 200 + 1) + 190)}px;
 
         transform: rotate(${() => Math.floor(Math.random() * 26)}deg);
+    }
 
+    @media (max-width: 512px) {
+        width: 35vw;
+        height: 25vh;
+
+        .tape1{
+            top: -15vh;
+            width: 3.2vw;
+            position: relative;
+        }
+
+        .tape2{
+            position: absolute;
+            left: 30vw;
+            top: -2vh;
+            width: 3.2vw;
+
+        }
 
     }
 `

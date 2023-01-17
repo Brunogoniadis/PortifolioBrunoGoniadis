@@ -49,10 +49,13 @@ export const Contato = () =>{
                     <div className="inputUserNameData">
                         <Input id="name" className="inputName" label="Nome completo" type="required" {...register("name",{required:true}) }> </Input>
                         <Input id="office" className="inputCargo" label="Cargo(Opcional)" type="text" {...register('office')}></Input>
-                        <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message" {...register('message')}></Input>
+                        <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message" {...register('message')}>
+                        <button type="submit"><BiSend/></button>
+
+                        </Input>
                         
                     </div>
-                    <button type="submit"><BiSend/></button>
+
 
             </form>
 

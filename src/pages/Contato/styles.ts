@@ -118,9 +118,6 @@ export const Container = styled.div`
                 align-items: center;
                 justify-content: center;
 
-                top:-4.2vw;
-                left: 28.5vw;
-
                 z-index: 1001;
 
                 border: none;

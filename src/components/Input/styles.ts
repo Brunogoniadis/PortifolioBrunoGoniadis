@@ -6,12 +6,10 @@ export const Wrapper = styled.div`
     position: relative;
 ` 
 export const Icon = styled.div`
-    position: relative;
-    bottom:3.2vh;
-    left: 72vh;
     z-index:1001;
-
     display: flex;
+    position: relative;
+    bottom:92%
 `
 
 export const Container = styled.div`
@@ -21,7 +19,7 @@ export const Container = styled.div`
         
         width: auto;
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
     
         color: black;
 
@@ -78,9 +76,6 @@ export const Container = styled.div`
         svg {
             width: 18px;
             height: 18px;
-            position: absolute;
-            left: 20px;
-            bottom: -5px
         }
     }
     

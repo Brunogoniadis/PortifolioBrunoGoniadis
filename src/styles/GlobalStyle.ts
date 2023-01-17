@@ -51,12 +51,15 @@ export default createGlobalStyle`
         }
         p{
             font-size: min(20px , 1.5vw);
-
         }
 
     h1, h2, h3, h4, h5, h6, p, strong{
         font-weight: 500;
         font-family: 'Poppins';
+    }
+
+    @media (max-width: 512px) {
+
     }
 
 

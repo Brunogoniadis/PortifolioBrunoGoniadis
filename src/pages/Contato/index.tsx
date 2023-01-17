@@ -1,13 +1,24 @@
 import { ButtonSocial } from "../../components/ButtonSocial";
 import { PostIt } from "../../components/PostIt";
-import { Container } from "./styles";
-import { useForm } from "react-hook-form";
 import { Input } from "../../components/Input";
+import { Container } from "./styles";
 
 import {BiSend} from "react-icons/bi"
 
+import { IRegisterData } from "./types";
+
+import { useForm } from "react-hook-form";
+
 
 export const Contato = () =>{
+
+    const { register, handleSubmit, formState} = useForm<IRegisterData>({});
+
+    function registerUser(data: IRegisterData) {
+        console.log(data);
+    }
+
+
     return(
         <Container>
             <h2>Deixe seu recado!</h2>
@@ -32,18 +43,18 @@ export const Contato = () =>{
 
             </div>
 
-            <div className="formContainer">
+            <form className="formContainer" onSubmit={handleSubmit(registerUser)}>
 
 
                     <div className="inputUserNameData">
-                        <Input id="name" className="inputName" label="Seu nome" type="text"> </Input>
-                        <Input id="office" className="inputCargo" label="Seu cargo(Opcional)" type="text"></Input>
-                        <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message" ></Input>
+                        <Input id="name" className="inputName" label="Nome completo" type="required" {...register("name",{required:true}) }> </Input>
+                        <Input id="office" className="inputCargo" label="Cargo(Opcional)" type="text" {...register('office')}></Input>
+                        <Input id= "message" className="inputMensager" label="Sua Mensagem" type="message" {...register('message')}></Input>
                         
                     </div>
-                    <button><BiSend></BiSend></button>
+                    <button type="submit"><BiSend/></button>
 
-            </div>
+            </form>
 
             <h2>Contato</h2>
 

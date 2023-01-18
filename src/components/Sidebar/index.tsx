@@ -1,21 +1,39 @@
-import { SidebarContainer } from "./styled";
+import { Container } from "./styled";
 
 import  { useState } from 'react';
+import {RxHamburgerMenu} from "react-icons/rx"
 import { ISidebar } from "./types";
+import { Link } from 'react-scroll'
 
-export const Sidebar = ({statusSidebar, setStatusSidebar}:ISidebar) =>{
 
-    if (!statusSidebar ) return null;
+export const Sidebar = ({}:ISidebar) =>{
+
+    const [statusSidebar, setStatusSidebar] = useState(false);
 
     return(
-    <SidebarContainer onClick={()=>{setStatusSidebar(false)}}>
-        <div className="sidebar" >
-            <h3>teste</h3>
-            <h3>teste</h3>
-            <h3>teste</h3>
-            <h3>teste</h3>
+
+    <Container>
+        <button className="revealSideButton" onClick={()=>setStatusSidebar(true)}><RxHamburgerMenu/></button>
+        
+        <div className="sidebarContainer" onClick={()=>{setStatusSidebar(false)}} style={{display: `${statusSidebar ? 'flex' : 'none'}`}}>
+            
+
+            
         </div>
-    </SidebarContainer>
+
+        <div className="sidebar" style={{transform: `translateX(${statusSidebar ? '0' : '-100%'})`}}>
+                <h2>Portfólio</h2>
+
+                <div className="linkContainer">
+                    <Link className="linkScroll" to="home" spy={true} smooth={true} onClick={()=>{setStatusSidebar(false)}}>Home</Link>
+                    <Link className="linkScroll" to="Tecnologias" spy={true} smooth={true} onClick={()=>{setStatusSidebar(false)}}>Tecnologias</Link>
+                    <Link className="linkScroll" to="Projetos" spy={true} smooth={true} onClick={()=>{setStatusSidebar(false)}}>Projetos</Link>
+                    <Link className="linkScroll" to="Contato" spy={true} smooth={true} onClick={()=>{setStatusSidebar(false)}}>Contato</Link>
+                </div>
+        </div>
+        
+    </Container>    
+
 
     )
 

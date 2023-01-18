@@ -17,10 +17,7 @@ export const Home = () =>{
 
     return(
         <Container>
-          <Sidebar statusSidebar={isOpen} setStatusSidebar={setIsOpen}/>
-          <button className="asideButton" onClick={() => setIsOpen(!isOpen)}>
-            <RxHamburgerMenu/>
-          </button>
+
 
           <div className="textsDescriptionContainer">
           <h1>Bruno Goniadis Lima</h1>

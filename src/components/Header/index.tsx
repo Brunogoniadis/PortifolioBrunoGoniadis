@@ -1,6 +1,10 @@
 import { Container } from "./styles";
 
+
+
 export const Header = () =>{
+
+
     return(
         <Container>
             
@@ -15,6 +19,7 @@ export const Header = () =>{
                 <p>Contato</p>
             </ol>
 
+        
         </Container>
     )
 }

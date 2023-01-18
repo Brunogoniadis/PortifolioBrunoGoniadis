@@ -175,6 +175,10 @@ export const Container = styled.div`
                 .avatar{
                     width: 35%;
                     margin-bottom: 10px;
+
+                    border-radius: 50%;
+                    box-shadow: 0 0 15px var(--color-secondary);
+
             }
         }
     }    

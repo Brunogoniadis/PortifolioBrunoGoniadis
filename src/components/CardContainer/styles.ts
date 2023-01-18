@@ -21,7 +21,9 @@ export const ContainerBaseCards = styled.div`
         height: 50%;
     }
     .pdescriptionContainer{
-        padding-right: 25px;
+        padding-right: 10px;
+        padding-left: 10px;
+
         margin-top: 55px;
         width: 100%;
         height: 100%;
@@ -52,6 +54,16 @@ export const ContainerBaseCards = styled.div`
             .descriptionTechnologyContainer{
                 margin-top: 10vh;
                 width: 100%;
+
+                text-align: center;
+
+                h3{
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px 1px var(--color-secondary);
+                    padding: 5px;
+
+  
+                }
             }
             .cardsBase{
                 width: 100%;

@@ -133,6 +133,7 @@ export const Container = styled.div`
                 text-align: center;
                 left: 20vw;
                 right: 20vw;
+
             }
             h2{
                 font-size: 1.2em;
@@ -149,7 +150,6 @@ export const Container = styled.div`
 
             }   
 
-            flex-direction: column;
             
 
             .textsDescriptionContainer{
@@ -157,12 +157,24 @@ export const Container = styled.div`
                 text-align: center;
 
             }
+            .descriptionTopList{
+                margin-top: -5vh;
 
+            }
+
+            .descriptionList{
+                border: 2px solid var(--color-secondary);
+
+                box-shadow: 0 0 20px var(--color-secondary);
+
+                border-radius: 5px;
+                padding: 2px;
+            }
             .avatarContainer{
 
                 .avatar{
-                    width: 20%;
-                    position: relative;
+                    width: 35%;
+                    margin-bottom: 10px;
             }
         }
     }    

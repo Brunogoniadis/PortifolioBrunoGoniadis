@@ -23,10 +23,10 @@ export const Home = () =>{
           </button>
 
           <div className="textsDescriptionContainer">
-
+          <h1>Bruno Goniadis Lima</h1>
             <ol className="descriptionTopList">
-                <h1>Bruno Goniadis Lima</h1>
-                <h2>Graduando em Engenharia de <br></br>Software</h2>
+
+                <h2>Engenheiro de Software</h2>
                 <p>Unicesumar 2019 - Março de 2023</p>
             </ol>
 

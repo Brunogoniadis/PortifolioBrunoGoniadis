@@ -25,6 +25,10 @@ export const Container = styled.div`
             font-size: min(20px , 1.5vw);
         }
 
+        .asideButton{
+            visibility: hidden;        
+        }
+
         .textsDescriptionContainer{
             
         }
@@ -94,6 +98,19 @@ export const Container = styled.div`
         }
         @media (max-width: 512px) {
             flex-direction: column-reverse;
+
+
+
+            .asideButton{
+                visibility: visible;
+                position: fixed ;
+                top:2vh;
+                right: 2vh;
+                width: 5vh;
+                height: 5vh;
+            }
+
+
             h1{
                 font-size: 1.5em;
                 text-align: center;

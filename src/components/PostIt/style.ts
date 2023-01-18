@@ -53,7 +53,7 @@ export const Container = styled.div`
         height: 25vh;
 
         .tape1{
-            top: -25vh;
+            bottom: 15vh;
             width: 3.2vw;
         }
         .tape2{
@@ -62,7 +62,7 @@ export const Container = styled.div`
             width: 3.2vw;
         }
     }
-
+    
     @media (max-width: 1024px) {
         .tape1{
             top: -14vh;

@@ -2,9 +2,25 @@ import { Container } from "./styles"
 import  Avatar  from "../../../src/assets/Avatar.png";
 import  Grid  from "../../../src/assets/gridhalf.svg";
 
+import { Sidebar } from "../../components/Sidebar";
+
+import  { useState } from 'react';
+
+
 export const Home = () =>{
+
+
+    const [isOpen, setIsOpen] = useState(false);
+
+
+
     return(
         <Container>
+          <Sidebar statusSidebar={isOpen}/>
+          <button className="asideButton" onClick={() => setIsOpen(!isOpen)}>
+
+          </button>
+
           <div className="textsDescriptionContainer">
 
             <ol className="descriptionTopList">

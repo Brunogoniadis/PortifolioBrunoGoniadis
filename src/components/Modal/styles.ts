@@ -80,5 +80,22 @@ export const ModalContainer=styled.div`
             gap: 20px;
         }
     }
+    @media (max-width: 512px){
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+        .overlay{
+
+            height: 1000px;
+        }
+        .content{
+            width: 85%;
+            height: 65%;
+            left: 8vw;
+            right: 5vw;
+
+        }
+    }
 
 `

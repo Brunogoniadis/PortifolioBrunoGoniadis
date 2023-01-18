@@ -41,10 +41,9 @@ export const Container = styled.div`
         position: relative;
         width: 1vw;
         height: 4vh;
-        background-color: aliceblue;
-        bottom: 16.5vh;
-
-        left: ${() => Math.floor(Math.random() * (210 - 200 + 1) + 190)}px;
+        background-color: red;
+        bottom: 17vh;
+        left: ${() => `calc(${(Math.random() * (9.5 - 8) + 8).toFixed(1)}vw)`};
 
         transform: rotate(${() => Math.floor(Math.random() * 26)}deg);
     }
@@ -58,14 +57,43 @@ export const Container = styled.div`
             width: 3.2vw;
             position: relative;
         }
-
         .tape2{
             position: absolute;
             left: 30vw;
             top: -2vh;
             width: 3.2vw;
-
         }
 
     }
+    @media (max-width: 1024px) {
+        .tape1{
+            background-color:blueviolet;
+            top: -14vh;
+        }
+        .tape2{
+            background-color:red;
+            top: -18vh;
+        }
+    }
+    @media (max-width: 1280px){
+        .tape1{
+            background-color:blueviolet;
+            top: -16vh;
+        }
+        .tape2{
+            background-color:red;
+            top: -20vh;
+        }
+    }
+    @media (max-width: 1366px){
+        .tape1{
+            background-color:blueviolet;
+            top: -16vh;
+        }
+        .tape2{
+            background-color:red;
+            top: -20vh;
+        }
+    }
+
 `

@@ -53,18 +53,16 @@ export const Container = styled.div`
         height: 25vh;
 
         .tape1{
-            top: -15vh;
+            top: -25vh;
             width: 3.2vw;
-            position: relative;
         }
         .tape2{
-            position: absolute;
-            left: 30vw;
+            left: 19vw;
             top: -2vh;
             width: 3.2vw;
         }
-
     }
+
     @media (max-width: 1024px) {
         .tape1{
             top: -14vh;

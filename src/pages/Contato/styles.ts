@@ -13,6 +13,7 @@ export const Container = styled.div`
 
     align-items: center;
 
+    
 
     p{
         width: 50vw;
@@ -117,7 +118,7 @@ export const Container = styled.div`
     }
     .buttonContainer{
 
-        width: 85vw;
+        width: 80vw;
         height: 35vh;
 
         align-items: center;
@@ -127,7 +128,6 @@ export const Container = styled.div`
         grid-template-columns: auto auto auto auto;
 
         justify-content: start;
-
         gap: 35px;
     }
     @media (max-width: 512px) {

@@ -41,7 +41,7 @@ export const Container = styled.div`
         position: relative;
         width: 1vw;
         height: 4vh;
-        background-color: red;
+        background-color: aliceblue;
         bottom: 17vh;
         left: ${() => `calc(${(Math.random() * (9.5 - 8) + 8).toFixed(1)}vw)`};
 
@@ -67,31 +67,25 @@ export const Container = styled.div`
     }
     @media (max-width: 1024px) {
         .tape1{
-            background-color:blueviolet;
             top: -14vh;
         }
         .tape2{
-            background-color:red;
             top: -18vh;
         }
     }
     @media (max-width: 1280px){
         .tape1{
-            background-color:blueviolet;
             top: -16vh;
         }
         .tape2{
-            background-color:red;
             top: -20vh;
         }
     }
     @media (max-width: 1366px){
         .tape1{
-            background-color:blueviolet;
             top: -16vh;
         }
         .tape2{
-            background-color:red;
             top: -20vh;
         }
     }

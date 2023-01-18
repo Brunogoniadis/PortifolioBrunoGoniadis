@@ -24,5 +24,7 @@ export const Container = styled.div`
     }
     @media (max-width: 512px) {
         display: none;
+        width: 10vw;
+        font-size: 5px;
     }
 `

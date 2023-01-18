@@ -40,6 +40,7 @@ export const Container=styled.div`
             justify-content: space-around;
             row-gap: 10vh;
             margin-top: -15vh;
+            width: 95%;
         }
     }
 

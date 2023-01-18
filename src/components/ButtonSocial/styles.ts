@@ -3,8 +3,8 @@ import { Link } from "@reach/router";
 
 
 export const Container = styled.div`
-    width: 12vw;
-    height: 12vw;
+    width: 5vw;
+    height: 5vw;
 
     border: none;
     border-radius: 6px;
@@ -16,6 +16,11 @@ export const Container = styled.div`
     justify-content: center;
 
     overflow: hidden;
+
+    @media (max-width: 512px) {
+        width: 12vw;
+        height: 12vw;
+    }
 `
 export const MyAnchor = styled.a`
     

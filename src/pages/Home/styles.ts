@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
     margin: 10vw;
     margin-top: 10vh ;
@@ -99,8 +101,6 @@ export const Container = styled.div`
         @media (max-width: 512px) {
             flex-direction: column-reverse;
 
-
-
             .asideButton{
                 visibility: visible;
                 position: fixed ;
@@ -108,6 +108,23 @@ export const Container = styled.div`
                 right: 2vh;
                 width: 5vh;
                 height: 5vh;
+                border-radius: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border: none;
+                background-color: transparent;
+
+                svg{
+                    width: 5vh;
+                    height: 5vh;
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+                }
+
+
+      
             }
 
 
@@ -146,9 +163,9 @@ export const Container = styled.div`
                 .avatar{
                     width: 20%;
                     position: relative;
-                }
             }
-
-
         }
+    }    
+
+    
 `

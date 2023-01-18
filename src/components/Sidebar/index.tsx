@@ -3,20 +3,22 @@ import { SidebarContainer } from "./styled";
 import  { useState } from 'react';
 import { ISidebar } from "./types";
 
-export const Sidebar = ({statusSidebar}:ISidebar) =>{
+export const Sidebar = ({statusSidebar, setStatusSidebar}:ISidebar) =>{
 
-    const [isOpen, setIsOpen] = useState(false);
+    if (!statusSidebar ) return null;
 
+    return(
+    <SidebarContainer onClick={()=>{setStatusSidebar(false)}}>
+        <div className="sidebar" >
+            <h3>teste</h3>
+            <h3>teste</h3>
+            <h3>teste</h3>
+            <h3>teste</h3>
+        </div>
+    </SidebarContainer>
 
-
-    return (
-
-
-        <SidebarContainer style={{transform: `translateX(${statusSidebar ? '0' : '-100%'})`}}>
-            <p>teste</p>
-            <p>teste</p>
-            <p>teste</p>
-            <p>teste</p>
-        </SidebarContainer>
     )
+
+        
+    
 }

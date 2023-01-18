@@ -6,6 +6,7 @@ import { Sidebar } from "../../components/Sidebar";
 
 import  { useState } from 'react';
 
+import {RxHamburgerMenu} from "react-icons/rx"
 
 export const Home = () =>{
 
@@ -16,9 +17,9 @@ export const Home = () =>{
 
     return(
         <Container>
-          <Sidebar statusSidebar={isOpen}/>
+          <Sidebar statusSidebar={isOpen} setStatusSidebar={setIsOpen}/>
           <button className="asideButton" onClick={() => setIsOpen(!isOpen)}>
-
+            <RxHamburgerMenu/>
           </button>
 
           <div className="textsDescriptionContainer">

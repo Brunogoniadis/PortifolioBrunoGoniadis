@@ -27,4 +27,7 @@ export const Container = styled.div`
         width: 10vw;
         font-size: 5px;
     }
+    .linkScroll{
+        cursor: pointer;
+    }
 `

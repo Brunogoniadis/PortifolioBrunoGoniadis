@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+import { Link } from 'react-scroll'
 
 
 
@@ -10,13 +11,13 @@ export const Header = () =>{
             
             <h3>Portfólio</h3>
             <ol className="descriptionPages">
-                <p>Home</p>
+                <Link className="linkScroll" to="home" spy={true} smooth={true}><p>Home</p></Link>
                 <p>•</p>
-                <p>Tecnologias</p>
+                <Link className="linkScroll" to="Tecnologias" spy={true} smooth={true}><p>Tecnologias</p></Link>
                 <p>•</p>
-                <p>Projetos</p>
+                <Link className="linkScroll" to="Projetos" spy={true} smooth={true}><p>Projetos</p></Link>
                 <p>•</p>
-                <p>Contato</p>
+                <Link className="linkScroll" to="Contato" spy={true} smooth={true}><p>Contato</p></Link>
             </ol>
 
         

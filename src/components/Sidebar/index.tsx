@@ -2,11 +2,10 @@ import { Container } from "./styled";
 
 import  { useState } from 'react';
 import {RxHamburgerMenu} from "react-icons/rx"
-import { ISidebar } from "./types";
 import { Link } from 'react-scroll'
 
 
-export const Sidebar = ({}:ISidebar) =>{
+export const Sidebar = () =>{
 
     const [statusSidebar, setStatusSidebar] = useState(false);
 

@@ -20,7 +20,7 @@ export const Container = styled.div`
                 to {opacity:100}
               }
     animation: background 0.2s;
-
+    overflow-y: hidden;
   }
   
 

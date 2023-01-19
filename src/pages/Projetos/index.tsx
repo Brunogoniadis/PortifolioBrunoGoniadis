@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useState, useRef , useEffect} from 'react'
 
 import { Container } from "./styles";
 import { Project } from "../../components/Project";
@@ -13,12 +13,16 @@ import weatherApp from "../../assets/projetos/weatherApp.png"
 
 import MjvMarkketModal from "../../assets/projetos/modalImage/MjvMarkketModal.png"
 import coinValueModal from "../../assets/projetos/modalImage/coinValueModal.png"
+import { UseBodyScrollLock } from '../../hooks/useBodyScrollLocker';
 
 
 export const Projetos = () => {
 
 
     const [open, setOpen] = useState(false);
+    const [isLocked, toggle] = UseBodyScrollLock();
+
+
 
     const [descriptions, setDescriptions] = useState({
         title:'', 
@@ -28,11 +32,8 @@ export const Projetos = () => {
         lang: ''
     });
 
-    const onOpenModal = () => {
-        setOpen(true);
-    }
-
     const onOpenModalSaldaoMjv = () => {
+
         setOpen(true);
         setDescriptions({
             title:"Saldão MJV",
@@ -44,13 +45,14 @@ export const Projetos = () => {
     }
     const onOpenModalCoinValue = () => {
         setOpen(true);
+
         setDescriptions({
             title:"Valor de Moeda",
             description:"Aplicação que mostra a temperatura atual.",
             image: coinValueModal,
             type: "Pessoal",
             lang: "ReactJS"
-    })
+    })            
     }
 
 
@@ -75,7 +77,7 @@ export const Projetos = () => {
 
             <div className="projectContainer">
 
-                <button onClick={onOpenModalSaldaoMjv} > <Project image={saldaoMjv} title="Saldão Mjv" type='Bootcamp' lang='ReactTs'/>
+                <button onClick={async () => {await onOpenModalSaldaoMjv(); toggle}}> <Project image={saldaoMjv} title="Saldão Mjv" type='Bootcamp' lang='ReactTs'/>
                     
                 </button>
 

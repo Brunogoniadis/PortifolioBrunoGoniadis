@@ -15,17 +15,20 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 
 function App() {
   
+  
+
+
 
   return (
     <div className="App">
       
       <GlobalStyle/>
-        <Main>
-          <Header/>
+        <Main style={{ overflowY:"hidden"}}>
+            <Header/>
 
             <Sidebar/>
             
-            <Element name="home">
+            <Element name="home" >
               <Home />
             </Element>
 
@@ -41,7 +44,7 @@ function App() {
               <Contato/>
             </Element>
 
-          <Footer/>
+            <Footer/>
         </Main>
     </div>
   )

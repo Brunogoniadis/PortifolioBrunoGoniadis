@@ -54,10 +54,10 @@ export const ModalContainer=styled.div`
         background-color: var(--color-backgroundMain);
 
 
-
         z-index:1001;
         position:absolute;
         
+
         img{
             width: 100%;
         } 

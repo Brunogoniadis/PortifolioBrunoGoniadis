@@ -1,6 +1,6 @@
 import { Container } from "./styled";
 
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import {RxHamburgerMenu} from "react-icons/rx"
 import { Link } from 'react-scroll'
 
@@ -9,15 +9,19 @@ export const Sidebar = () =>{
 
     const [statusSidebar, setStatusSidebar] = useState(false);
 
+
+
+
+
     return(
 
     <Container>
         <button className="revealSideButton" onClick={()=>setStatusSidebar(true)}><RxHamburgerMenu/></button>
         
-        <div className="sidebarContainer" onClick={()=>{setStatusSidebar(false)}} style={{display: `${statusSidebar ? 'flex' : 'none'}`}}>
+        <div className="sidebarContainer" onClick={()=>{setStatusSidebar(false)}} style={{display: `${statusSidebar ? 'flex' : 'none'}` }}>
             
 
-            
+        
         </div>
 
         <div className="sidebar" style={{transform: `translateX(${statusSidebar ? '0' : '-100%'})`}}>

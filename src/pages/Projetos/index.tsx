@@ -123,7 +123,7 @@ export const Projetos = () => {
 
                 <button onClick={onOpenModalWeatherApp}><Project image={weatherApp} title="Aplicação do tempo React" type='ProjetoBootCamp' lang='ReactJs'/></button>
 
-                <button><Project image={DigitalClockJS} title="Aplicação de Hora JS" type='Pessoal' lang='JavaScript'/></button>
+                <button onClick={onOpenModalTimeJS}><Project image={DigitalClockJS} title="Aplicação de Hora JS" type='Pessoal' lang='JavaScript'/></button>
 
 
             </div>

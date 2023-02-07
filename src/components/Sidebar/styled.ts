@@ -67,6 +67,7 @@ export const Container = styled.div`
     transition: transform 0.3s ease-out;
   }
   h2{
+    margin-top: 5vh;
     margin-bottom: 10vh;
   }
 
@@ -91,7 +92,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    :hover{
+    &:hover{
 
       background-color: transparent;
       h3{
@@ -108,5 +109,6 @@ export const Container = styled.div`
       animation: linkAnim 0.9s;
 
     }
+    
   }
 `

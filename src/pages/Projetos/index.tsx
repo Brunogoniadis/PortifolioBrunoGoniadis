@@ -52,6 +52,42 @@ export const Projetos = () => {
             image: coinValueModal,
             type: "Pessoal",
             lang: "ReactJS"
+    })           
+
+    }
+    const onOpenModalCardDigital = () => {
+        setOpen(true);
+
+        setDescriptions({
+            title:"Advogada Digital",
+            description:"Aplicação de card para a Advogada Bárbara Goniadis.",
+            image: barbaraCard,
+            type: "ProjetoBootCamp",
+            lang: "ReactJS"
+    })            
+    }
+
+    const onOpenModalWeatherApp = () => {
+        setOpen(true);
+
+        setDescriptions({
+            title:"WeatherApp",
+            description:"Mini container com informação de Tempo.",
+            image: weatherApp,
+            type: "ProjetoBootCamp",
+            lang: "ReactJS"
+    })            
+    }
+
+    const onOpenModalTimeJS = () => {
+        setOpen(true);
+
+        setDescriptions({
+            title:"TimeJS",
+            description:"Aplicação de horas em JavaScript.",
+            image: weatherApp,
+            type: "Pessoal",
+            lang: "ReactJS"
     })            
     }
 
@@ -81,13 +117,13 @@ export const Projetos = () => {
                     
                 </button>
 
-                <button onClick={onOpenModalCoinValue}> <Project image={coinValue} title="Coin Value" type='Pessoal' lang='ReactJs' /></button>
+                <button onClick={onOpenModalCoinValue}> <Project image={coinValue} title="Coin Value" type='ProjetoBootCamp' lang='ReactJs' /></button>
 
-                <button><Project image={barbaraCard} title="Card Digital" /></button>
+                <button onClick={onOpenModalCardDigital}><Project image={barbaraCard} title="Card Digital" type='Projeto' lang='ReactJs'/></button>
 
-                <button><Project image={weatherApp} title="Aplicação do tempo React" /></button>
+                <button onClick={onOpenModalWeatherApp}><Project image={weatherApp} title="Aplicação do tempo React" type='ProjetoBootCamp' lang='ReactJs'/></button>
 
-                <button><Project image={DigitalClockJS} title="Aplicação de Hora JS" /></button>
+                <button><Project image={DigitalClockJS} title="Aplicação de Hora JS" type='Pessoal' lang='JavaScript'/></button>
 
 
             </div>

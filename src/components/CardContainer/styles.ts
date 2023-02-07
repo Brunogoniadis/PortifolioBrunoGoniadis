@@ -24,9 +24,9 @@ export const ContainerBaseCards = styled.div`
         padding-right: 10px;
         padding-left: 10px;
 
-        margin-top: 55px;
         width: 100%;
-        height: 100%;
+        height: auto;
+
     }
     .cardsBase{
         display: flex;

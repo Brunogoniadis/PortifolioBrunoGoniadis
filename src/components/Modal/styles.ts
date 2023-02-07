@@ -64,7 +64,7 @@ export const ModalContainer=styled.div`
 
         h2{
             
-            margin-top: -90px;
+            margin-top: -50px;
             margin-bottom: 10px;
         }
 

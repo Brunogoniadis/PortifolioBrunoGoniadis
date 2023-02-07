@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
 
   .sidebarContainer{
@@ -70,34 +72,41 @@ export const Container = styled.div`
 
   .linkScroll{
 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+
     width: 200px;
-    height: 35px;
+    height: 45px;
     margin-bottom: 10vh;
 
-    border: 1px solid var(--color-border);
     background-color: var(--color-backgroundMain);
 
 
     border-radius: 10px 0px 0px 10px;
 
-    padding: 10px;
+    gap: 10px;
 
     display: flex;
     align-items: center;
 
     :hover{
 
-
-      box-shadow: -15px 0px 10px 0px var(--color-secondary) inset;
+      background-color: transparent;
+      h3{
+        display: none;
+      }
 
 
       @keyframes linkAnim {
                 0%   {margin-left: 0px; position:relative}
-                50%  {margin-left: 160vw;position:relative}
-                80%  {margin-left: 5vw;position:relative}
+                75%  {margin-left: 120vw;position:relative}
+                90%  {margin-left: 120vw;position:relative}
                 100% {margin-left: 0px; position:relative}
       }
       animation: linkAnim 0.9s;
+
     }
   }
 `

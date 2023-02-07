@@ -12,6 +12,7 @@ import { useForm } from "react-hook-form";
 
 export const Contato = () =>{
 
+    
     const { register, handleSubmit, formState} = useForm<IRegisterData>({});
 
     function registerUser(data: IRegisterData) {
@@ -21,6 +22,7 @@ export const Contato = () =>{
 
     return(
         <Container>
+            {/* 
             <h2>Deixe seu recado!</h2>
             <p>Quer deixar um elogio, tem sugestões de melhorias  no portfólio ou já participou de algum projeto comigo? Comenta aqui!</p>
             
@@ -58,7 +60,7 @@ export const Contato = () =>{
 
 
             </form>
-
+*/}
             <h2>Contato</h2>
 
             <div className="buttonContainer">

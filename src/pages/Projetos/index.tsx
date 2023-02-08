@@ -6,10 +6,20 @@ import { Project } from "../../components/Project";
 import { Modal } from '../../components/Modal/Modal';
 
 import barbaraCard from "../../assets/projetos/barbaraCard.png"
+import barbaraCardModal from "../../assets/projetos/modalImage/barbaraCardModal.png"
+
 import coinValue from "../../assets/projetos/coinValue.png"
+
+
 import DigitalClockJS from "../../assets/projetos/DigitalClockJS.png"
+import DigitalClockJSModal from "../../assets/projetos/modalImage/DigitalClockJSModal.png"
+
+
 import saldaoMjv from "../../assets/projetos/saldaoMjv.png"
+
 import weatherApp from "../../assets/projetos/weatherApp.png"
+import weatherAppModal from "../../assets/projetos/modalImage/weatherAppModal.png"
+
 
 import MjvMarkketModal from "../../assets/projetos/modalImage/MjvMarkketModal.png"
 import coinValueModal from "../../assets/projetos/modalImage/coinValueModal.png"
@@ -29,7 +39,8 @@ export const Projetos = () => {
         description:'',
         image:'',
         type: '',
-        lang: ''
+        lang: '',
+        linkOfProject:''
     });
 
     const onOpenModalSaldaoMjv = () => {
@@ -40,7 +51,8 @@ export const Projetos = () => {
             description:"Aplicação ecommerce.",
             image: MjvMarkketModal,
             type: "BootCamp",
-            lang: "ReactJS"
+            lang: "ReactJS",
+            linkOfProject:'https://github.com/Brunogoniadis/g4-mjv_school'
     })
     }
     const onOpenModalCoinValue = () => {
@@ -51,7 +63,8 @@ export const Projetos = () => {
             description:"Aplicação que mostra a temperatura atual.",
             image: coinValueModal,
             type: "Pessoal",
-            lang: "ReactJS"
+            lang: "ReactJS",
+            linkOfProject:'https://github.com/Brunogoniadis/coinValueReact'
     })           
 
     }
@@ -61,9 +74,10 @@ export const Projetos = () => {
         setDescriptions({
             title:"Advogada Digital",
             description:"Aplicação de card para a Advogada Bárbara Goniadis.",
-            image: barbaraCard,
+            image: barbaraCardModal,
             type: "ProjetoBootCamp",
-            lang: "ReactJS"
+            lang: "ReactJS",
+            linkOfProject:'https://github.com/Brunogoniadis/BarbaraGoniadisCard'
     })            
     }
 
@@ -73,9 +87,10 @@ export const Projetos = () => {
         setDescriptions({
             title:"WeatherApp",
             description:"Mini container com informação de Tempo.",
-            image: weatherApp,
+            image: weatherAppModal,
             type: "ProjetoBootCamp",
-            lang: "ReactJS"
+            lang: "ReactJS",
+            linkOfProject:'https://github.com/Brunogoniadis/WeatherApp'
     })            
     }
 
@@ -85,11 +100,14 @@ export const Projetos = () => {
         setDescriptions({
             title:"TimeJS",
             description:"Aplicação de horas em JavaScript.",
-            image: weatherApp,
+            image: DigitalClockJSModal,
             type: "Pessoal",
-            lang: "ReactJS"
+            lang: "ReactJS",
+            linkOfProject:'https://github.com/Brunogoniadis/DigitalClockJS'
     })            
     }
+
+    
 
 
 
@@ -108,12 +126,14 @@ export const Projetos = () => {
                 image={descriptions.image}
                 type={descriptions.type}
                 lang={descriptions.lang}
-                linkOfProject='null'
+                linkOfProject={descriptions.linkOfProject}
             ></Modal>
 
             <div className="projectContainer">
 
-                <button onClick={async () => {await onOpenModalSaldaoMjv(); toggle}}> <Project image={saldaoMjv} title="Saldão Mjv" type='Bootcamp' lang='ReactTs'/>
+                <button 
+                onClick={async () => {await onOpenModalSaldaoMjv(); toggle}}
+                > <Project image={saldaoMjv} title="Saldão Mjv" type='Bootcamp' lang='ReactTs'/>
                     
                 </button>
 
@@ -124,7 +144,6 @@ export const Projetos = () => {
                 <button onClick={onOpenModalWeatherApp}><Project image={weatherApp} title="Aplicação do tempo React" type='ProjetoBootCamp' lang='ReactJs'/></button>
 
                 <button onClick={onOpenModalTimeJS}><Project image={DigitalClockJS} title="Aplicação de Hora JS" type='Pessoal' lang='JavaScript'/></button>
-
 
             </div>
         </Container>

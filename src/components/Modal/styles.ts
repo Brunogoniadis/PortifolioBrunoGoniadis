@@ -79,6 +79,12 @@ export const ModalContainer=styled.div`
             display: flex;
             gap: 20px;
         }
+        .containerLink{
+            width: 100%; 
+            text-align: center;
+            margin: 15px;
+        }
+        
     }
     @media (max-width: 512px){
         align-items: center;
@@ -98,4 +104,7 @@ export const ModalContainer=styled.div`
         }
     }
 
+`
+export const MyAnchor = styled.a`
+    color: var(--color-text);
 `

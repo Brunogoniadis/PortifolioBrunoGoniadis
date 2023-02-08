@@ -4,9 +4,9 @@ import { IModal } from "./types";
 
 import { UseBodyScrollLock } from "../../hooks/useBodyScrollLocker"
 import { useEffect } from "react";
+import { MyAnchor} from "./styles"
 
-
-export const Modal =({isOpen , setOpen, title, description,image, type, lang}:IModal)=>{
+export const Modal =({isOpen , setOpen, title, description,image, type, lang, linkOfProject}:IModal)=>{
 
     if (!isOpen ) return null;
 
@@ -40,7 +40,9 @@ export const Modal =({isOpen , setOpen, title, description,image, type, lang}:IM
 
                 <p>{description}</p>
 
-
+                <div className="containerLink">
+                    <MyAnchor href={linkOfProject} target="_blank"  rel='noopener noreferrer'> <p>Link:  {linkOfProject}</p></MyAnchor>
+                </div>
             </div>
         </ModalContainer>
     )

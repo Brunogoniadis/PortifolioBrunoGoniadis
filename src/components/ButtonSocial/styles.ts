@@ -31,4 +31,4 @@ export const MyAnchor = styled.a`
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
-    `
+`

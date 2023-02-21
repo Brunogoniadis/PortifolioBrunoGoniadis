@@ -23,6 +23,11 @@ export const Home = () =>{
           <h1>Bruno Goniadis Lima</h1>
             <ol className="descriptionTopList">
 
+                <h2>Desenvolvedor React</h2>
+                <p>MJV Innovation - 02/2023 ~ Atualmente</p>
+            </ol>
+
+            <ol className="descriptionList">
                 <h2>Engenheiro de Software</h2>
                 <p>Unicesumar 2019 - Março de 2023</p>
             </ol>

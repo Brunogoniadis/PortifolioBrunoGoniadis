@@ -41,7 +41,7 @@ export default createGlobalStyle`
     }
         h1{
             font-size: min(3.5em , 3vw);
-            font-weight: 600;
+        
         }
         h2{
             font-size: min(40px , 2.2vw);

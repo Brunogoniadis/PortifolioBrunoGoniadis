@@ -1,187 +1,129 @@
 import styled from "styled-components";
 
-
-
 export const Container = styled.div`
-    margin: 10vw;
-    margin-top: 10vh ;
+  h1 {
+    font-size: min(3.5em, 3vw);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: min(2.2em, 2vw);
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: min(2.6em, 1.8vw);
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: min(2.2em, 1.6vw);
+    font-weight: 100;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    font-size: min(1.8em, 1.2vw);
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    gap: 0;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-radius: 0 0 250px 0px;
+
+  .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
     justify-content: space-around;
-    align-items: center;
-    
-    height: auto;
+    align-items: start;
 
-        h1{
-            font-size: min(3.5em , 3vw);
-            font-weight: 600;
-            margin-bottom: 6vh;
-        }
-        h2{
-            font-size: min(40px , 2.2vw);
-        }
-        h3{
-            font-size: min(28px , 1.8vw);
-        }
-        p{
-            font-size: min(20px , 1.5vw);
-        }
+    height: 80%;
+    margin-left: 10vw;
+  }
 
-        .asideButton{
-            visibility: hidden;        
-        }
+  .textInfo {
+    margin-bottom: 0px;
+  }
+  .asideButton {
+    visibility: hidden;
+  }
 
-        .textsDescriptionContainer{
-            
-        }
+  @media (max-width: 512px) {
+    flex-direction: column-reverse;
 
-        .descriptionTopList{
-            margin-bottom: 42px;
-        }
+    .asideButton {
+      visibility: visible;
+      position: fixed;
+      top: 2vh;
+      right: 2vh;
+      width: 5vh;
+      height: 5vh;
+      border-radius: 50%;
 
-        .descriptionList{
-            margin-bottom: 28px;
-        }
-        
-        .avatarContainer{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            
-            .avatar{
-                width: 90%;
-                height: auto;
-            }
-            .grid{
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-                height: 5vw;
-                top: 85vh;
-                position: absolute;
-                z-index: 920;
-                filter: invert(11%) sepia(1%) saturate(6104%) hue-rotate(202deg) brightness(101%) contrast(87%);
+      border: none;
+      background-color: transparent;
 
-                
-            }
-            .laser{
-                position: absolute;
-                width: 30vw;                
-                top: 93.5vh;
+      svg {
+        width: 5vh;
+        height: 5vh;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+          brightness(103%) contrast(103%);
+      }
+    }
 
-                background-color: aliceblue;
-                box-shadow: 2px 5px 10px 5px var(--color-secondary);
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      left: 20vw;
+      right: 20vw;
+    }
+    h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 1em;
+      font-weight: normal;
+    }
+    p {
+      font-size: 0.8em;
+      font-weight: normal;
+    }
 
-                @keyframes active {
-                    0% { 
-                        margin-top: 0px;
-                        opacity: 5%;
-                    }
-                    75%{
-                        opacity: 20%;  
-                    }
-                    50%{
-                        opacity: 75%;
-                    }
+    .textsDescriptionContainer {
+      width: 100%;
+      text-align: center;
+    }
+    .descriptionTopList {
+      margin-top: -5vh;
+    }
 
-                    85%{
-                        opacity: 20%;  
-                    }
-                    100% {
-                        margin-top: -65px; 
-                        opacity: 0%;
-                    }
-                    
-                }
-                animation: active 1.0s alternate infinite;
+    .descriptionList {
+      border: 2px solid var(--color-secondary);
 
+      box-shadow: 0 0 20px var(--color-secondary);
 
-
-            }
-        }
-        @media (max-width: 512px) {
-            flex-direction: column-reverse;
-
-            .asideButton{
-                visibility: visible;
-                position: fixed ;
-                top:2vh;
-                right: 2vh;
-                width: 5vh;
-                height: 5vh;
-                border-radius: 50%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                border: none;
-                background-color: transparent;
-
-                svg{
-                    width: 5vh;
-                    height: 5vh;
-                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-                }
-
-
-      
-            }
-
-
-            h1{
-                font-size: 1.5em;
-                text-align: center;
-                left: 20vw;
-                right: 20vw;
-
-            }
-            h2{
-                font-size: 1.2em;
-                font-weight: normal;
-            }
-            h3{
-                font-size: 1.0em;
-                font-weight: normal;
-
-            }
-            p{
-                font-size: 0.8em;
-                font-weight: normal;
-
-            }   
-
-            
-
-            .textsDescriptionContainer{
-                width: 100%;
-                text-align: center;
-
-            }
-            .descriptionTopList{
-                margin-top: -5vh;
-
-            }
-
-            .descriptionList{
-                border: 2px solid var(--color-secondary);
-
-                box-shadow: 0 0 20px var(--color-secondary);
-
-                border-radius: 5px;
-                padding: 2px;
-            }
-            .avatarContainer{
-
-                .avatar{
-                    width: 35%;
-                    margin-bottom: 10px;
-
-                    border-radius: 50%;
-                    box-shadow: 0 0 15px var(--color-secondary);
-
-            }
-        }
-    }    
-
-    
-`
+      border-radius: 5px;
+      padding: 2px;
+    }
+  }
+`;

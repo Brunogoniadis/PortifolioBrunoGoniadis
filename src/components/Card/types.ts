@@ -5,5 +5,4 @@ export interface ICardProps
     title:string;
     type1:string;
     type2:string;
-    description:string;
 }

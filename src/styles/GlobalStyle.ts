@@ -7,9 +7,9 @@ export default createGlobalStyle`
         --color-primary: #121214;
         --color-secondary:#4b31b9;
         --color-error:#EA524F;
-        --color-text:#E1E1E6;
-        --color-backgroundMain: #29292E;
-        --color-border: #7A7A7A;
+        --color-text:#0E0E0E;
+        --color-backgroundMain: #ffffff;
+        --color-border: rgba(0, 0, 0, 0.5);
         --color-backgroundCard: #fefefe;
   }
 
@@ -78,4 +78,4 @@ export default createGlobalStyle`
     }
 
 
-`
+`;

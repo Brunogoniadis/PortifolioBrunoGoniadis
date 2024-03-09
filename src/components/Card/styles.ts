@@ -3,110 +3,98 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    
-    h2{ font-size: min(1.3em , 3vw); font-weight: 600; }
+  h2 {
+    font-size: min(1.3em, 3vw);
+    font-weight: 600;
+  }
 
-    h3{ font-size: min(0.9em, 1.8vw); }
-    
-    p{ font-size: min(14px); font-weight: 400; }
+  h3 {
+    font-size: min(1em, 2vw);
+    font-weight: 400;
+  }
 
-    .cardContainer{
-        height: 30vw;
-        width: 15vw;
-        box-shadow: 2px 5px 10px 5px var(--color-primary);
+  p {
+    font-size: min(18px);
+    font-weight: 600;
+  }
 
-        overflow: hidden;
-        border-radius: 20px;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--color-backgroundCard);
+  .cardContainer {
+    height: 250px;
+    width: 250px;
 
-        color: var(--color-primary);
+    overflow: hidden;
+    border-radius: 5px;
 
-        :active{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
 
-            :active{
-            @keyframes active {
-                0% { margin-top: 0px }
-                50% {margin-top: -75px;}
-                100%{ margin-top: 0px;}
-            }
-            animation: active 0.2s normal;
+    color: var(--color-primary);
+  }
 
-        }
-        }
+  .logoContainer {
+    width: 100%;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      animation: logoCard 1.1s;
+      width: 90px;
+      height: 90px;
+      background-size: cover;
+      object-fit: contain;
     }
-    
-    .logoContainer{
-        
-        width :100% ;
-        height: 25vw ;
-        background-color: aliceblue;
+  }
 
-        box-shadow: 0.2rem 0.1rem 16rem 0.2rem var(--color-secondary);
-        border-radius: 0px 0px 150px 150px;
+  .textContainer {
+    padding: 0px;
+    .Title{
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .typeContainer {
+    display: flex;
+    gap: 10px;
+  }
+  .type {
+    background-color: #00d8ff;
+    padding: 6px;
+    border-radius: 25px;
+  }
 
-        img{
-            @keyframes logoCard {
-                from {width:0%}
-                to {width: 75%;}
-            }
-            animation: logoCard 2.5s;
-            margin-top: 3.5vh;
-            width: 75%;
 
+  @media (max-width: 512px) {
+    p {
+      font-size: 0.8em;
+    }
+    h3 {
+      font-weight: bold;
+    }
+    .cardContainer {
+      height: 45vw;
+      width: 25vw;
+    }
+    .logoContainer {
+      height: 10vw;
+
+      img {
+        width: 40%;
+        @keyframes logoCard {
+          from {
+            width: 0%;
+          }
+          to {
+            width: 40%;
+          }
         }
+        animation: logoCard 2.5s;
+      }
     }
-
-    .textContainer{
-        margin-top: 5px;
-        padding: 15px;
-    }
-
-    .typeContainer{
-        display: flex;
-        gap: 10px;
-    }
-    .type{
-        background-color: #00d8ff;
-        padding: 6px;
-        border-radius: 25px;
-    }
-    .descriptionContainer{
-        height: 220px;
-        padding-top: 15px;
-    }
-
-    @media (max-width: 512px){
-        p{
-            font-size: 0.8em;
-        }
-        h3{
-            font-weight: bold;
-        }
-        .cardContainer{
-            height: 45vw;
-            width: 25vw;
-        }
-        .logoContainer{
-            height: 10vw ;
-            
-            img{
-                width: 40%;
-                @keyframes logoCard {
-                from {width:0%} to {width: 40%;}
-            }
-                animation: logoCard 2.5s;
-            }
-
-        }
-    }
-
-`
+  }
+`;

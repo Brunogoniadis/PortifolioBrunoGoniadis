@@ -31,6 +31,7 @@ export const Container = styled.div`
   ul {
     list-style-type: none;
     padding: 0;
+
   }
   li {
     gap: 0;
@@ -58,6 +59,7 @@ export const Container = styled.div`
 
   .textInfo {
     margin-bottom: 0px;
+    color: white;
   }
   .asideButton {
     visibility: hidden;

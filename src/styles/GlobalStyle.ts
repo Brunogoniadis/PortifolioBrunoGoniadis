@@ -10,6 +10,7 @@ export default createGlobalStyle`
         --color-text:#0E0E0E;
         --color-backgroundMain: #ffffff;
         --color-border: rgba(0, 0, 0, 0.5);
+        --color-border-project:#B8B8B8;
         --color-backgroundCard: #fefefe;
   }
 

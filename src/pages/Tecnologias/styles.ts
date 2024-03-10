@@ -9,6 +9,7 @@ export const Container = styled.div`
   height: 100%;
   padding-left: 10vw;
   padding-right: 10vw;
+  
 
   .title {
     width: 100vw;

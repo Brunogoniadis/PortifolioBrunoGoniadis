@@ -52,7 +52,7 @@ export const Container = styled.div`
 
   .textContainer {
     padding: 0px;
-    .Title{
+    .Title {
       text-align: center;
       margin-bottom: 1rem;
     }
@@ -63,11 +63,11 @@ export const Container = styled.div`
     gap: 10px;
   }
   .type {
-    background-color: #00d8ff;
+    background-color: #2a292f;
     padding: 6px;
     border-radius: 25px;
+    color: white;
   }
-
 
   @media (max-width: 512px) {
     p {

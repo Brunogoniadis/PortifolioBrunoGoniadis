@@ -5,7 +5,6 @@ export const CustomSlider = styled(Slider)`
   * {
     text-decoration: none;
   }
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,18 +42,37 @@ export const CustomSlider = styled(Slider)`
 export const ItemSlide = styled.div`
   width: 450px !important;
   height: 550px;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  border: 1px solid var(--color-border-project);
+  border-radius: 8px;
+
+  h2,
+  p,
+  a {
+    padding-left: 1vw;
+    color: var(--color-text-grey);
+  }
+
+  h2 {
+    font-size: min(29px, 2.2vw);
+    margin-top: 0.5rem;
+  }
+  h3 {
+    font-size: min(28px, 1.8vw);
+  }
+  p {
+    font-size: min(20px, 1.5vw);
+  }
 
   img {
     height: 320px;
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
+    margin: 0.5rem 0rem 0.5rem;
 
     background-color: #d2d2d2;
     display: flex;
@@ -65,7 +83,7 @@ export const ItemSlide = styled.div`
     display: flex;
     position: relative;
 
-    width: 210px;
+    width: 80%;
     height: 50px;
     background-color: white;
     margin-top: -40px;

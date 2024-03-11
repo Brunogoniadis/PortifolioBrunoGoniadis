@@ -8,6 +8,7 @@ export default createGlobalStyle`
         --color-secondary:#4b31b9;
         --color-error:#EA524F;
         --color-text:#0E0E0E;
+        --color-text-grey: #373737;
         --color-backgroundMain: #ffffff;
         --color-border: rgba(0, 0, 0, 0.5);
         --color-border-project:#B8B8B8;

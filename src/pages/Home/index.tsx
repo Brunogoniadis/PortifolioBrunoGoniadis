@@ -31,9 +31,21 @@ export const Home = () => {
                 <div className="textInfo">
                     <h3>Experiência Profissional:</h3>
                     <ul>
+
+                          <li>
+                            <h4> ● Engenheiro de software</h4>
+                            <p>Simbiox - 2024 - Emprego atual <br />
+                                Arquitetura e enhenharia de sistemas com Sharepoint<br />
+                            
+
+
+
+                            </p>
+                        </li>
+                        
                         <li>
                             <h4> ● Desenvolvedor React</h4>
-                            <p>MJV Innovation - 02/2023 - Emprego atual <br />
+                            <p>MJV Innovation - 02/2023 - 2024 <br />
                                 Criação e customização de aplicações Web com Type-Script no<br />
                                 Sharepoint, integrado ao back-end Node com banco de dados(NoSQL) ou SQL.<br />
 

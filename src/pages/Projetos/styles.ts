@@ -137,7 +137,8 @@ export const Container = styled.div`
   }
 
   .arrowLeft {
-    background-color: red;
+    background-color: transparent;
+    border: black 1px solid;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -147,7 +148,8 @@ export const Container = styled.div`
   }
 
   .arrowRight {
-    background-color: red;
+    background-color: transparent;
+    border: black 1px solid;
     width: 50px;
     height: 50px;
     border-radius: 50%;

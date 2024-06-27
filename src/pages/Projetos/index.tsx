@@ -141,8 +141,8 @@ export const Projetos = () => {
             >
                 <div className="arrowContainer">
 
-                    <button className='arrowLeft' onClick={prevSlide}>Previous</button>
-                    <button className='arrowRight' onClick={nextSlide}>Next</button>
+                    <button className='arrowLeft' onClick={prevSlide}><</button>
+                    <button className='arrowRight' onClick={nextSlide}>></button>
                 </div>
 
                 <CustomSlider ref={sliderRef} {...settings}>
